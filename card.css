@@ -1,0 +1,64 @@
+.cardbody {
+    display: flex;
+    margin-left: 5%;
+}
+
+h2 {
+    margin-left: 2%;
+    display: inline-block;
+    color: rgb(241, 244, 172);
+}
+
+.cardbody img {
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.cardbody .container {
+    background-color: white;
+    border-radius: 8px;
+    width: 210px;
+    margin: 20px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.cardbody span {
+    color: rgba(0, 0, 0, 0.38);
+    font-size: small;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    margin: 5px;
+    padding: 2px;
+}
+
+h3,
+p {
+    margin: 5px;
+}
+
+h3{
+    color: rgba(0, 0, 0, 0.657);
+}
+
+p {
+    color: rgba(0, 0, 0, 0.538);
+}
+
+.cardbody button {
+    margin: 10px;
+    border-radius: 18px;
+    border: none;
+    color: rgb(23, 12, 238);
+    height: 30px;
+    background-color: rgba(0, 94, 255, 0.249);
+}
+
+@media only screen and (max-width:500px) {
+    .cardbody{
+        flex-direction: column;
+    }
+}

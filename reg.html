@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="checkin.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginpg.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="indexx.html" class="Icon">VOYAGO</a>
+            <a href="indexx.html">Home</a>
+            <a href="attract.html">Attractions</a>
+            <a href="contactus.html">Contact Us</a>
+            <input type="text" placeholder="Search Places" id="Search">
+            <button onclick="toggle()" id="logcheck"></button>
+        </nav>
+    </header>
+    <div class="container">
+        <div id="firstdiv">
+            <center><strong>LOGIN</strong>
+                <div>
+                    <form>
+                        <input type="text" name="txtname" placeholder=" Name"  required>
+                        <input type="text" name="txtusn" placeholder=" Username" id="username" required>
+                        <input type="password" name="txtpass" placeholder=" Password" id="password" required>
+                        <input type="submit" value="Sign Up" onclick="login()">
+                    </form>
+                </div>
+                Already have an account?<a href="login.html" class="lglink">Login</a>
+            </center>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

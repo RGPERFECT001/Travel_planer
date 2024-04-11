@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyago</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="attract.css">
+    <link rel="stylesheet" href="tour.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="checkin.js"></script>
+    <script>
+        window.onload = function() {
+            document.getElementById("collapseOne").style.display = "none";
+            document.getElementById("collapse2").style.display = "none";
+            document.getElementById("collapse3").style.display = "none";
+            if(localStorage.getItem("token") == null){
+                var a = document.getElementById("logcheck");
+                a.innerHTML = "Login";
+            }
+            else{
+                var a = document.getElementById("logcheck");
+                a.innerHTML = "Logout";
+            }
+        }
+    </script>
+</head>
+
+<body id="goa_body">
+    <header>
+        <nav>
+            <a href="indexx.html" class="Icon">VOYAGO</a>
+            <a href="indexx.html">Home</a>
+            <a href="attract.html">Attractions</a>
+            <a href="contactus.html">Contact Us</a>
+            <input type="text" placeholder="Search Places" id="Search">
+            <input type="button" onclick="search()" id="srch_button" value="🔎">
+            <button onclick="toggle()" id="logcheck"></button>
+        </nav>
+    </header>
+
+    <div class="head">
+        <h1>Goa</h1>
+        <p>
+            Goa is a land that redefines holidays, with its exquisite mix of sun, surf, and beaches; Goa has become the ultimate tourist destination. 
+            Goa is a tiny emeralds land with its natural scenic beauty, attractive beaches and temples, famous for its architecture, feast and festivals 
+            and hospitable people with a rich culture. So get swept away in Goa by the spectacular sunrises and sunsets and rejuvenate yourself.
+          </p>
+    </div>
+            <div id="accordion">
+           
+                <div class="card">
+                    <div class="card-header">
+                        3 Nights & 4 Days
+                    </div>
+                    <div class="card-body">
+                        <center>
+                        <ul>
+                            <li><img src="https://images.unsplash.com/photo-1614082242765-7c98ca0f3df3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" width="400px" height="200px"></li>
+                            <li class="outer"><p class="price">&#8377 10,990 /</p> &nbsp; per person</li>
+                            <li><b class="route">Route : &nbsp;</b>Palolem beach - panji - Vagator - Palolem beam</li>
+                          </ul>
+                        <button type="button" onclick="myFunction('collapseOne')" >More</button>
+                        </center>
+                    </div>
+                    <div id="collapseOne">
+                        <div class="card-body"><div class="body_div">
+                         <ul>
+                            <li>Margaon/airport transfers.</li>
+                            <hr>
+                            <li>Accommodation in well-appointed AC deluxe rooms with LCD screen, telephone, and safe locker.</li>
+                            <li>A welcome drink on arrival.</li>
+                            <li>Buffet breakfast </li>
+                            <li>One day North Goa & South Goa sightseeing ·</li>
+                            <li>Boat cruise on Mandovi river.</li>
+                            <hr>
+                            <li>10% discount on food bills availed in our restaurant.</li>
+                            <li>Two bottles of mineral water in the room (replenished once daily).</li>
+                            <li>Tea/coffee maker in the room with supplements (replenished once daily)</li>
+                            <li>Complimentary use of swimming pool with proper swimwear.</li>
+                            <li>Free use of Wi-fi in the lobby area 24 x 7.</li>
+                           </ul></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                      5 Days & 4 Nights
+                    </div>
+                    <div class="card-body">
+                      <center><ul>
+                        <li><img src="https://images.unsplash.com/photo-1587922546307-776227941871?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" width="400px" height="200px"></li>
+                        <li class="outer"><p class="price">&#8377 25,990 /</p> &nbsp; per person</li>
+                        <li><b class="route">Route : &nbsp;</b>Palolem beach - Panji - Vagator - Agonda - Calangute - Panji - Palolem beam</li>
+                      </ul>
+                        <button type="button" onclick="myFunction('collapse2')">More</button>
+                    </center>
+                    </div>
+                    <div id="collapse2">
+                        <div class="card-body"><div class="body_div">
+                         <ul>
+                            <li>Pick-up and drop from railway station/airport.</li>
+                            <hr>
+                            <li>A welcome drink on arrival.</li>
+                            <li>Two water bottles daily.</li>
+                            <li>Accommodation for 4 nights on a twin-sharing basis.</li>
+                            <hr>
+                           <li> Swimming pool access at the hotel. </li>
+                           <li> North Goa and South Goa full day sightseeing by private AC cab. </li>
+                           <li> 4 breakfasts, dinner, and 1 lunch.</li>
+                           <li> Water sports include scuba diving, parasailing, jetski, banana ride.</li>
+                            <li>Speed boat ride pick-up and drop.</li>
+                            <li>Scuba diving video clip.</li>
+                            <li>Water sports like Scuba diving and banana ride Speed boat,Parasa</li>
+                          </ul></div>
+                        </div>
+                      </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                      4 Days & 3 Night
+                    </div>
+                    <div class="card-body">
+                        <center>
+                      <ul>
+                        <li><img src="https://images.unsplash.com/photo-1625505826533-5c80aca7d157?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80" width="400px" height="200px"></li>
+                        <li class="outer"><p class="price">&#8377 20,990 /</p> &nbsp; per person</li>
+                        <li><b class="route">Route : &nbsp;</b>Panji - Vagator - Agonda - Candolim Beach Road - Baga Beach - Calangute - Panji</li>
+                      </ul>
+                        <button type="button" onclick="myFunction('collapse3')" >More</button>
+                    </center>
+                    </div>
+                    <div id="collapse3" >
+                        <div class="card-body"><div class="body_div">
+                          <ul>
+                            <li>3 nights package stay on double occupancy.</li>
+                            <li>Non-alcoholic welcome drink on arrival with a face towel.</li>
+                            <li>Complimentary airport/Madgaon Station transfer by sharing or fixed departure by AC car/coach.</li>
+                            <li>Buffet breakfast and dinner.</li>
+                            <hr>
+                            <li>One half-day sightseeing tour</li>
+                            <li>Courtesy beach transfer to Cavelossim beach (fixed departure )</li>
+                            <hr>
+                            <li>Complimentary accommodation for 2 children below 6 years or 1 child below 10 years without bed/without extra bed.</li>
+                            <li>Complimentary use of tea/coffee maker in a room.</li>
+                            <li>Complimentary 2 bottles of mineral waters and snacks replenished daily.</li>
+                            <li>Complimentary use of swimming pool with proper swimwear, gym, library, and pool table.</li>
+                            <li>Daily in-house domestic brand complimentary for 3 hours 6 to 9 pm at a predefined area.</li>
+                            <li>Use of Wifi</li>
+                           </ul></div>
+                        </div>
+                      </div>
+                </div>
+          
+                <button  type="button" class="lst_button" onclick="location.href='https:/www.booking.com/searchresults.html?ss=Goa'">Book now</button>
+                
+            
+        </div>
+
+        <h2>Attractions in Goa</h2>
+        <div class="cardbody">
+            <div class="container">
+                <div>
+                    <img src="image/G1.jpg" width="200px" height="150px">
+                </div>
+                <div>
+                    <span>Beach</span>
+                    <span>Party</span>
+                    <h3>Baga Beach</h3>
+                    <p>Baga Beach is one of the most popular beaches in Goa and is known for its nightlife and water sports
+                        activities. The beach is lined with shacks and restaurants that serve delicious Goan cuisine.
+                    </p>
+                    <div class="centered">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <img src="image/G2.jpg" width="200px" height="150px">
+                </div>
+                <div>
+                    <span>Beach</span>
+                    <span>Party</span>
+                    <h3>Calangute Beach</h3>
+                    <p>Calangute Beach is one of the most popular beaches in Goa and is known for its water sports activities
+                        and nightlife. The beach is lined with shacks and restaurants that serve delicious Goan cuisine.
+                    </p>
+                    <div class="centered">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <img src="image/G3.jpg" width="200px" height="150px">
+                </div>
+                <div>
+                    <span>Historical</span>
+                    <span>Monument</span>
+                    <h3>Basilica of Bom Jesus</h3>
+                    <p>The Basilica of Bom Jesus is a UNESCO World Heritage Site and is one of the oldest churches in Goa. The
+                        church is known for housing the mortal remains of St. Francis Xavier.
+                    </p>
+                    <div class="centered">
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

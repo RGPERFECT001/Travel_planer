@@ -1,0 +1,81 @@
+#myVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  body {
+    /* text-align: center; */
+    margin: 0;
+    background-image: url("image/back.jpg");
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+  header {
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: #00000043;
+    padding-left: 10vw;
+  }
+
+  #dealers {
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .dealer_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    padding-left: 4vw;
+  }
+
+  .dealer {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 250px;
+    max-height: 250px;
+    overflow: hidden;
+    text-overflow: hidden;
+  }
+  
+  h1 {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: xxx-large;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.831);
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  h2 {
+    color: whitesmoke;
+    font-size: xx-large;
+  }
+  
+  h3{
+      font-size: x-large;
+  }
+  

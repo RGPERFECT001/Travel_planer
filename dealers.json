@@ -1,0 +1,58 @@
+{
+    "Goa": [
+      {
+        "dealer_name": "Goa Tours",
+        "address": "123 Main Street, Agra",
+        "phone": "+91 1234567890",
+        "email": "Goatours.com"
+      },
+      {
+        "dealer_name": "Goa Sightseeing",
+        "address": "456 2nd Street, Agra",
+        "phone": "+91 0987654321",
+        "email": "info@Goasightseeing.com"
+      }
+    ],
+    "Ladakh": [
+      {
+        "dealer_name": "Ladakh Adventures",
+        "address": "789 High Street, Leh",
+        "phone": "+91 2345678901",
+        "email": "info@ladakhadventures.com"
+      },
+      {
+        "dealer_name": "Ladakh Expeditions",
+        "address": "1010 Market Street, Leh",
+        "phone": "+91 3456789012",
+        "email": "info@ladakhexpeditions.com"
+      }
+    ],
+    "Andaman": [
+      {
+        "dealer_name": "Andaman Paradise Tours",
+        "address": "555 Downtown Street, Andaman",
+        "phone": "+91 5678901234",
+        "email": "info@Andamanparadisetours.com"
+      },
+      {
+        "dealer_name": "Andaman Adventure Trek",
+        "address": "777 New Street, Andaman",
+        "phone": "+91 6789012345",
+        "email": "info@Andamanadventuretrek.com"
+      }
+    ],
+    "Dehradun": [
+      {
+        "dealer_name": "Dehradun Tours",
+        "address": "888 Uptown Street, Dehradun",
+        "phone": "+91 7890123456",
+        "email": "info@Deahraduntravel.com"
+      },
+      {
+        "dealer_name": "Dehradun Adventures",
+        "address": "999 Midtown Street, Dehradun",
+        "phone": "+91 8901234567",
+        "email": "info@Dehraduntours.com"
+      }
+    ]
+  }

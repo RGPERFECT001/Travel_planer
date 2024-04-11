@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyago</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="attract.css">
+    <link rel="stylesheet" href="tour.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="checkin.js"></script>
+    <script>
+        window.onload = function () {
+            document.getElementById("collapseOne").style.display = "none";
+            document.getElementById("collapse2").style.display = "none";
+            document.getElementById("collapse3").style.display = "none";
+            if (localStorage.getItem("token") == null) {
+                var a = document.getElementById("logcheck");
+                a.innerHTML = "Login";
+            }
+            else {
+                var a = document.getElementById("logcheck");
+                a.innerHTML = "Logout";
+            }
+        }
+    </script>
+</head>
+
+<body id="andaman_body">
+    <header>
+        <nav>
+            <a href="indexx.html" class="Icon">VOYAGO</a>
+            <a href="indexx.html">Home</a>
+            <a href="attract.html">Attractions</a>
+            <a href="contactus.html">Contact Us</a>
+            <input type="text" placeholder="Search Places" id="Search">
+            <input type="button" onclick="search()" id="srch_button" value="🔎">
+            <button onclick="toggle()" id="logcheck"></button>
+        </nav>
+    </header>
+
+    <div class="head">
+        <h1>ANDAMAN AND NICOBAR ISLAND</h1>
+        <p>
+            Andaman Islands tourism is a perfect destination in India that covers many aspects of a travelers
+            requirements.
+            Be it a solo, family, adventure or a honeymoon traveler coming to the Andaman Islands, Andaman Tourism has
+            to offer everything to each segment of travelers.
+            The island has gained quite a lot of popularity among travelers who are looking into both leisure and
+            adventure trips in India.
+            The underwater experience in Andaman is quite unique and still in its pristine state. The different shades
+            of green can actually be seen in the Andaman Islands.
+            The tourism at the islands has seen a steep increase for the past 2 - 3 years.
+        </p>
+    </div>
+    <div id="accordion">
+
+        <div class="card">
+            <div class="card-header">
+                4 Nights & 5 Days
+            </div>
+            <div class="card-body">
+                <center>
+                    <ul>
+                        <li><img src="https://images.unsplash.com/photo-1586359716568-3e1907e4cf9f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+                                width="400px" height="200px"></li>
+                        <li class="outer">
+                            <p class="price">&#8377 24,990 /</p> &nbsp; per person
+                        </li>
+                        <li><b class="route">Places to Visit : &nbsp;</b>02 Nights Port Blair/ 02 Nights Havelock</li>
+                    </ul>
+                    <button type="button" onclick="myFunction('collapseOne')">More</button>
+                </center>
+            </div>
+            <div id="collapseOne">
+                <div class="card-body">
+                    <div class="body_div">
+                        <ul>
+                            <li>2 Nights accommodation in Port Blair at hotel.</li>
+                            <li>2 Nights accommodation in Havelock at hotel.</li>
+                            <hr>
+                            <li>Daily Breakfast at the Respective hotel/resort on the fixed menu or Buffet at Port Blair
+                                & Havelock Islands.</li>
+                            <li>Return airport transfers and sightseeing on Private basis.</li>
+                            <li>All transfers & Site Seeing by a AC Vehicle at Port Blair.</li>
+                            <li>All transfers & Site Seeing at Havelock Island by Ac Vehicle.</li>
+                            <li>01 Tour Coordinator to Meet the Guest and Explain Every Day Tour on Daily Basis..</li>
+                            <hr>
+                            <li>Return trip to Havelock from Port Blair by Makruzz/Makruzz Gold/Makruzz Pearl/Sea
+                                Link/Bhagya Express/Green Ocean 1/ITT Majestic.</li>
+                            <li>Snorkelling trip to Elephant Beach/Light House at Havelock Island by High Speed Fibre
+                                Boats .(on Sharing Basis one Snorkelling Session is a part of the Ticket price for
+                                Elephant Beach/Light House)</li>
+                            <li>Meet and Greet on arrival / departure.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="card">
+            <div class="card-header">
+                5 Days & 6 Nights
+            </div>
+            <div class="card-body">
+                <center>
+                    <ul>
+                        <li><img
+                            src="https://images.unsplash.com/photo-1586053226626-febc8817962f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            width="400px" height="200px"></li>
+                        <li class="outer">
+                          <p class="price">&#8377 29,990 /</p> &nbsp; per person
+                        </li>
+                        <li><b class="route">Places to Visit : &nbsp;</b>03 Nights Port Blair/ 04 Nights Havelock</li>
+                      </ul>
+                    <button type="button" onclick="myFunction('collapse2')">More</button>
+                </center>
+            </div>
+            <div id="collapse2">
+                <div class="card-body">
+                    <div class="body_div">
+                        <ul>
+                            <li>Accommodation on twin sharing basis in hotels mentioned or similarDaily BreakfastEntrance Fees to All
+                                MonumentsPort Blair </li>
+                              <li>Havelock (Swaraj Dweep)</li>
+                              <hr>
+                              <li> Port Blair will be by Makruzz/Coastal Cruise/Green Ocean/Sea link.AC Vehicles as per group size on
+                                sharing basis (SUV/Tempo); Vehicle cannot be confirmed at the time of booking; Vehicle is not at
+                                disposal </li>
+                              <li> means it is for transfers and sightseeing as per the itinerary;Insurance For All Pax Under 70
+                                YearsAll presently applicable Hotel taxes but not GSTInclusive of all must see sightseeing.</li>
+                              <li>Corbyns Cove Beach;Sound & Light show at Cellular Jail2 Museums</li>
+                              <li>Anthropological; SamudrikaRadhanagar BeachElephant BeachBharatpur Beach,Laxmanpur BeachHowrah
+                                BridgeComplimentary </li>
+                              <hr>
+                              <li> A Family Photo sessionComplimentary </li>
+                              <li> A Snorkelling Session at Elephant Beach Provided By Boat Association</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                8 Days & 9 Night
+            </div>
+            <div class="card-body">
+                <center>
+                    <ul>
+                        <li><img
+                            src="https://images.unsplash.com/photo-1617653202545-931490e8d7e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+                            width="400px" height="200px"></li>
+                        <li class="outer">
+                          <p class="price">&#8377 39,990 /</p> &nbsp; per person
+                        </li>
+                        <li><b class="route">Places to Visit : &nbsp;</b>07 Nights Port Blair/ 08 Nights Havelock</li>
+                      </ul>
+                    <button type="button" onclick="myFunction('collapse3')">More</button>
+                </center>
+            </div>
+            <div id="collapse3">
+                <div class="card-body">
+                    <div class="body_div">
+                        <ul>
+                            <li>Airport pick up and drop as per your flight timings</li>
+                            <li>Comfortable and hygienic Vehicle (SUV / Sedan) as per the group size</li>
+                            <li>Stay on a double (for couples & special requests) and triple-sharing basis in hotels</li>
+                            <li>Breakfast (from Day 2 to Last Day as per itinerary)</li>
+                            <li>Driver night charges & allowances, toll tax, parking charges, etc.</li>
+                            <li>Experienced driver for the entire journey</li>
+                            <hr>
+                            <li>Sightseeing as per itinerary</li>
+                            <li>Inter-Island Transfers, Jetty Pick-up & Drop as per the itinerary.</li>
+                            <li>Scuba Dive through one of the world's best corals at Havelock Island.</li>
+                            <li>Enjoy a thrilling experience of a Premium water sport - Sea Kart at Port Blair.</li>
+                            <li>Get a chance to be a Kayak and enjoy an adventurous Night Kayaking experience through Mangroves at
+                              Havelock Island.</li>
+                            <li>Relax in a soothing session of Body Spa at Port Blair.</li>
+                            <li>Get some souvenirs for your friends and family from the Market at Port Blair.</li>
+                            <li>Candle Light Dinner at the Havelock Island </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="lst_button" onclick="location.href='https:/www.booking.com/searchresults.html?ss=Andaman'">Book now</button>
+
+
+    </div>
+
+    <h2>Attractions in Andaman</h2>
+    <div class="cardbody">
+        <div class="container">
+            <div>
+                <img src="image/A1.jpg" width="200px" height="150px">
+            </div>
+            <div>
+                <span>Nature</span>
+                <span>Sea</span>
+                <h3>Scuba Diving</h3>
+                <p>This activity is more than just a usual Shore diving experience. The reef here is superb and you may
+                    spot a turtle during your diving experience at Neil Island
+                </p>
+                <div class="centered">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <img src="image/A2.jpg" width="200px" height="150px">
+            </div>
+            <div>
+                <span>Nature</span>
+                <span>Beach</span>
+                <h3>Wandoor Beach</h3>
+                <p>Wandoor beach is one of the most relaxing and rejuvenating places in Port Blair. The beach is full of
+                    biodiversity and the water is crystal clear.
+                </p>
+                <div class="centered">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <img src="image/A3.jpg" width="200px" height="150px">
+            </div>
+            <div>
+                <span>Monument</span>
+                <span>Historical</span>
+                <h3>Cellular Jail</h3>
+                <p>Once a jail in the British Era is presently protected as a heritage monument with a light and sound
+                    show that narrates the history of the jail.
+                </p>
+                <div class="centered">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

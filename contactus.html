@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="checkin.js"></script>
+	<script type="text/javascript">$(document).ready(function() {
+    $.ajax({
+        url: 'dealers.json',
+        dataType: 'json',
+        success: function(data) {
+            var dealers = data;
+            var dealersHtml = '';
+            for (var key in dealers) {
+                if (dealers.hasOwnProperty(key)) {
+                    dealersHtml += '<h2>Dealers for ' + key + '</h2>';
+                    dealersHtml += '<div class="dealer_container">';
+                    for (var i = 0; i < dealers[key].length; i++) {
+                        dealersHtml += '<div class="dealer">';
+                        dealersHtml += '<h3>' + dealers[key][i].dealer_name + '</h3>';
+                        dealersHtml += '<p>' + dealers[key][i].address + '</p>';
+                        dealersHtml += '<p>Phone: ' + dealers[key][i].phone + '</p>';
+                        dealersHtml += '<p>Email: ' + dealers[key][i].email + '</p>';
+                        dealersHtml += '</div>';
+                    }
+                    dealersHtml += '</div>';
+                }
+            }
+            $('#dealers').html(dealersHtml);
+        },
+        error: function() {
+            alert('Unable to fetch dealers.');
+        }
+    });
+});
+</script>
+</head>
+<body>
+	<header>
+        <nav>
+            <a href="indexx.html" class="Icon">VOYAGO</a>
+            <a href="indexx.html">Home</a>
+            <a href="attract.html">Attractions</a>
+            <a href="contactus.html">Contact Us</a>
+            <input type="text" placeholder="Search Places" id="Search">
+            <input type="button" onclick="search()" id="srch_button" value="🔎">
+            <button onclick="toggle()" id="logcheck"></button>
+        </nav>
+    </header>
+	<div id="dealers"></div>
+</body>
+</html>

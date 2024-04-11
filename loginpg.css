@@ -1,0 +1,69 @@
+body{
+    background-image: url("image/back.jpg");
+    background-size: cover;
+  align-items: center;
+}
+
+header{
+  max-width: 100%;
+    width: 100%;
+    position: fixed;
+    padding-left: 10vw;
+}
+
+input{
+  border-radius: 10px;
+  border-color: white;
+  height: 40px;
+  width: 300px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: rgb(240, 236, 236);
+}
+
+input:focus{
+  background-color: rgb(220, 185, 255);
+}
+
+a:link .lglink,a:visited .lglink{
+  color:rgb(50, 200, 200);
+  text-decoration: none;
+}
+
+a:hover .lglink{
+  color: green;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"]{
+  background-color: rgb(50, 200, 200);
+  color: white;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
+  background-color: green;
+}
+
+.container{
+    height: 670px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container{
+  height: 100vh;
+  width: 30vw;
+  background-color: lavender;
+  display: flex;
+}
+
+
+#firstdiv{
+    background-color:rgb(212, 212, 255);
+    border-radius: 20px;
+    height: 250px;
+    width: 400px;   
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #f58b68ea;
+}
