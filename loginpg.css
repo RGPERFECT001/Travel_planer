@@ -26,21 +26,21 @@ input:focus{
 }
 
 a:link .lglink,a:visited .lglink{
-  color:rgb(50, 200, 200);
+  color:#f1683a;
   text-decoration: none;
 }
 
 a:hover .lglink{
-  color: green;
+  color: #eb4610;
 }
 
 input[type="submit"],input[type="reset"],input[type="button"]{
-  background-color: rgb(50, 200, 200);
+  background-color: #f1683a;
   color: white;
 }
 
 input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
-  background-color: green;
+  background-color: #eb4610;
 }
 
 .container{
@@ -59,7 +59,7 @@ input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{
 
 
 #firstdiv{
-    background-color:rgb(212, 212, 255);
+    background-color:rgba(212, 212, 255, 0.8555);
     border-radius: 20px;
     height: 250px;
     width: 400px;   
